@@ -51,7 +51,7 @@ if (IF_ID_IR[25:21] == 5'b00000) ID_EX_A <= 0;
 else ID_EX_A <= #2 Reg[IF_ID_IR[25:21]];
 
 if(IF_ID_IR[20:16] == 5'b00000) ID_EX_B <= 0;
-else ID_EX_B <= #2 Reg[IF_ID_IR[25:21]];
+else ID_EX_B <= #2 Reg[IF_ID_IR[20:16]];
 
 ID_EX_NPC <= #2 IF_ID_NPC; 
 ID_EX_IR <= #2 IF_ID_IR;
